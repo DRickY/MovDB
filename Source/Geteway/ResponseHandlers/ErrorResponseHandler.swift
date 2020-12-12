@@ -41,6 +41,9 @@ struct ErrorResponseHandler: ResponseHandler {
             observer(.failure(errorEntity))
             
             return true
+        } else if let e = response.error {
+            observer(.failure(e))
+            return true
         }
         
         return false

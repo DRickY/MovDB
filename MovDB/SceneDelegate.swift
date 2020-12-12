@@ -12,21 +12,17 @@ import Combine
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-//    var g: ApiSearchRepositoriesGatewayImpl!
-//    var bag = Set<AnyCancellable>()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        let host = Config.apiMovieEndpoint
+        let host = Config.apiEndpoint
         let apiClient: ApiClient = ApiClientImpl.defaultInstance(host: host)
         let apiService = ApiMovieGatewayImpl(apiClient)
 
-        let popularVM = PopularViewModel(movieUseCase: apiService)
-        let contentView = ContentView(viewModel: popularVM)
-            
-        popularVM.fetchDatas()
-//            TabViewWrapper()
-//            ContentView()
-        
+        let popularVM = ListViewModel(movieUseCase: apiService, category: .topRated)
+        let contentView = MovieListView(viewModel: popularVM)
+//            DetailMovieView(viewModel: .init(movieUseCase: apiService, id: 12477))
+//
+
         if let windowScene = scene as? UIWindowScene {
             
             let window = UIWindow(windowScene: windowScene)

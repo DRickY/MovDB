@@ -134,12 +134,12 @@ class ApiClientImpl: ApiClient {
                                                            response: (data, response, error),
                                                            observer: promise)
                             }
-                                                            promise(.failure(NSError.init()))
+
                             if !isHandled {
-                                
                                 var errorEntity = ResponseErrorEntity(response)
                                 errorEntity.errors.append(
                                     "Internal application error: server response handler not found")
+                                errorEntity.errors.append((error?.localizedDescription) ?? "")
                                 promise(.failure(errorEntity))
                             }
                         })
@@ -147,9 +147,8 @@ class ApiClientImpl: ApiClient {
                 dataTask.resume()
             }
         }
-        
         .subscribe(on: self.dispatchQueue)
-        .receive(on: self.dispatchQueue)
+        .receive(on: OperationQueue.main)
         .timeout(.seconds(request.responseTimeout), scheduler: OperationQueue.main)
         .eraseToAnyPublisher()
     }

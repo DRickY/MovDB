@@ -9,33 +9,32 @@ import SwiftUI
 
 struct AsyncImage<Placeholder: View>: View {
     
-    @StateObject private var loader: ImageLoader
+    @ObservedObject private var loader: ImageLoader
     
-    private let image: (UIImage) -> Image
+    private let placeholder: Placeholder?
+    private let configuration: (Image) -> Image
     
-    private let placeholder: Placeholder
-    
-    init(url: URL?, @ViewBuilder placeholder: () -> Placeholder, @ViewBuilder image: @escaping (UIImage) -> Image = Image.init(uiImage:)) {
-        self.placeholder = placeholder()
-        self.image = image
-        let c = Environment(\.imageCache).wrappedValue
-        self._loader = StateObject(wrappedValue: ImageLoader(url: url, cache: c))
+    init(url: URL, cache: ImageCache? = nil, placeholder: Placeholder? = nil, configuration: @escaping (Image) -> Image = { $0 }) {
+        self.loader = ImageLoader(url: url, cache: cache)
+        self.placeholder = placeholder
+        self.configuration = configuration
     }
     
     var body: some View {
-        self.content
+        self.image
             .onAppear(perform: self.loader.load)
-        //            .onDisappear(perform: self.loader.cancel)
+            .onDisappear(perform: self.loader.cancel)
     }
     
-    private var content: some View {
+    private var image: some View {
         Group {
             if self.loader.image != nil {
-                self.image(self.loader.image!)
+                self.configuration(Image(uiImage: self.loader.image!))
             } else {
                 self.placeholder
             }
         }
     }
 }
+
 
