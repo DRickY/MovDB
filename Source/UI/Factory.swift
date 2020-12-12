@@ -19,4 +19,8 @@ struct Factory {
         return DetailMovieViewModel(movieUseCase: movieService, id: id)
     }
     
+    func listViewModel(category: TMDB) -> ListViewModel {
+        return .init(movieUseCase: self.movieService, category: category)
+    }
+    
 }

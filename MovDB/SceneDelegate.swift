@@ -19,9 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let apiService = ApiMovieGatewayImpl(apiClient)
 
         let popularVM = ListViewModel(movieUseCase: apiService, category: .topRated)
-        let contentView = MovieListView(viewModel: popularVM)
-//            DetailMovieView(viewModel: .init(movieUseCase: apiService, id: 12477))
-//
+        let contentView = TabViewWrapper()
+//            MovieListView(viewModel: popularVM)
 
         if let windowScene = scene as? UIWindowScene {
             

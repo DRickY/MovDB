@@ -11,10 +11,12 @@ struct MovieEntity: Codable, Identifiable {
     let id: Int
     let title: String
     let overview: String
-    let poster_path: String
+    let poster_path: String?
     
     var poster: URL? {
-        return URL(string: Config.apiImageURLEndpoint.appending(self.poster_path))
+        return self.poster_path.flatMap {
+            return URL(string: Config.apiImageURLEndpoint.appending($0))
+        }
     }
 }
 

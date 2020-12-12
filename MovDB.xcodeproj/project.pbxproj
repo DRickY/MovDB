@@ -31,7 +31,6 @@
 		EF902F7D2582398900917366 /* JsonResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F4E2582398800917366 /* JsonResponseHandler.swift */; };
 		EF902F7E2582398900917366 /* ApiClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F4F2582398800917366 /* ApiClientImpl.swift */; };
 		EF902F812582398900917366 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F522582398800917366 /* ApiClient.swift */; };
-		EF902F822582398900917366 /* RepositoriesPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F532582398800917366 /* RepositoriesPagination.swift */; };
 		EF902F832582398900917366 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F542582398800917366 /* Requests.swift */; };
 		EF902F842582398900917366 /* UploadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F562582398800917366 /* UploadFile.swift */; };
 		EF902F852582398900917366 /* BodyConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F572582398800917366 /* BodyConvertible.swift */; };
@@ -82,7 +81,6 @@
 		EF902F4E2582398800917366 /* JsonResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonResponseHandler.swift; sourceTree = "<group>"; };
 		EF902F4F2582398800917366 /* ApiClientImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientImpl.swift; sourceTree = "<group>"; };
 		EF902F522582398800917366 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
-		EF902F532582398800917366 /* RepositoriesPagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesPagination.swift; sourceTree = "<group>"; };
 		EF902F542582398800917366 /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		EF902F562582398800917366 /* UploadFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFile.swift; sourceTree = "<group>"; };
 		EF902F572582398800917366 /* BodyConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyConvertible.swift; sourceTree = "<group>"; };
@@ -234,7 +232,6 @@
 				EF902F542582398800917366 /* Requests.swift */,
 				EF902F602582398800917366 /* ApiBaseGateway.swift */,
 				EF902F612582398800917366 /* MovieGateway.swift */,
-				EF902F532582398800917366 /* RepositoriesPagination.swift */,
 			);
 			path = Geteway;
 			sourceTree = "<group>";
@@ -405,7 +402,6 @@
 				EF902F852582398900917366 /* BodyConvertible.swift in Sources */,
 				EF8F2E862584DD8800D0A773 /* RandomAccessCollection+Extension.swift in Sources */,
 				EF902F952582398900917366 /* MovieEntity.swift in Sources */,
-				EF902F822582398900917366 /* RepositoriesPagination.swift in Sources */,
 				EF902F8E2582398900917366 /* ApiBaseGateway.swift in Sources */,
 				EF902F762582398900917366 /* URLSessionProtocol.swift in Sources */,
 				EF902F892582398900917366 /* QueryField.swift in Sources */,

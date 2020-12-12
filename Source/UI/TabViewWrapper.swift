@@ -10,18 +10,20 @@ import SwiftUI
 struct TabViewWrapper: View {
     
     var body: some View {
+        
         TabView {
-            Text("Popular tab view")
+            MovieListView(viewModel: Factory().listViewModel(category: .popular))
               .tabItem {
-                 Text("Popular Tab")
+                 Text("Popular")
                }
 
-            Text("Upcoming tab view")
+            MovieListView(viewModel: Factory().listViewModel(category: .upcoming))
+
                 .tabItem {
                     Text("Upcoming")
             }
             
-            Text("Top Rated tab view")
+            MovieListView(viewModel: Factory().listViewModel(category: .topRated))
                 .tabItem {
                     Text("Top Rated")
             }
