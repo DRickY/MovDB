@@ -1,0 +1,29 @@
+
+1. Создать приложение используя https://developers.themoviedb.org/3 API.
+
+2. Пользовательский интерфейс должен содержать TabBar c 3-мя закладками (Popular, Upcoming, Top Rated).
+
+3. При переключении между закладками приложение должно показывать фильмы для выбранной категории
+    (При загрузке приложения, отображать фильмы для секции выбранной по умолчанию).
+
+4. Информация о фильме в ячейке должна иметь следующий формат: Постер, название, краткое описание
+    (не больше 5 строчек).
+
+5.Во время загрузки данных должен отображаться Activity Indicator не блокирующий пользовательский интерфейс.
+
+6. При нажатии на любой фильм из списка, должно открываться окно с подробной информацией о фильме
+    (Постер, полное описание, дата выхода)
+
+Условия:
+1. SwiftUI
+2. MVVM
+3. Не использовать 3 rd -party libraries
+
+Полезные ссылки:
+1. https://developer.apple.com/tutorials/swiftui/
+
+2. https://swiftwithmajid.com/2020/07/02/the-difference-between-
+stateobject-environmentobject-and-observedobject-in-swiftui/
+
+3. https://benoitpasquier.com/swiftui-what-has-changed-in-mvvm-pattern-
+swift/

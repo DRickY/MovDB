@@ -13,6 +13,40 @@
 		EF30339225822BDC003AFF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF30339125822BDC003AFF18 /* Assets.xcassets */; };
 		EF30339525822BDC003AFF18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF30339425822BDC003AFF18 /* Preview Assets.xcassets */; };
 		EF30339825822BDC003AFF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF30339625822BDC003AFF18 /* LaunchScreen.storyboard */; };
+		EF712E0025836BA700E24189 /* PopularViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF712DFF25836BA700E24189 /* PopularViewModel.swift */; };
+		EF712E052583749200E24189 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF712E042583749200E24189 /* MovieCell.swift */; };
+		EF712E1E25839D7F00E24189 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF712E1D25839D7F00E24189 /* AsyncImage.swift */; };
+		EF8F2E862584DD8800D0A773 /* RandomAccessCollection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8F2E852584DD8800D0A773 /* RandomAccessCollection+Extension.swift */; };
+		EF8F2E8C2584DE0900D0A773 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8F2E8B2584DE0900D0A773 /* ImageLoader.swift */; };
+		EF8F2E8F2584DE2A00D0A773 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8F2E8E2584DE2A00D0A773 /* ImageCache.swift */; };
+		EF902F6E2582398900917366 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F3A2582398800917366 /* ApiEndpoint.swift */; };
+		EF902F722582398900917366 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F402582398800917366 /* Collection+Extension.swift */; };
+		EF902F752582398900917366 /* F.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F432582398800917366 /* F.swift */; };
+		EF902F762582398900917366 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F442582398800917366 /* URLSessionProtocol.swift */; };
+		EF902F7A2582398900917366 /* Interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F4A2582398800917366 /* Interceptor.swift */; };
+		EF902F7B2582398900917366 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F4C2582398800917366 /* ResponseHandler.swift */; };
+		EF902F7C2582398900917366 /* ErrorResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F4D2582398800917366 /* ErrorResponseHandler.swift */; };
+		EF902F7D2582398900917366 /* JsonResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F4E2582398800917366 /* JsonResponseHandler.swift */; };
+		EF902F7E2582398900917366 /* ApiClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F4F2582398800917366 /* ApiClientImpl.swift */; };
+		EF902F812582398900917366 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F522582398800917366 /* ApiClient.swift */; };
+		EF902F822582398900917366 /* RepositoriesPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F532582398800917366 /* RepositoriesPagination.swift */; };
+		EF902F832582398900917366 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F542582398800917366 /* Requests.swift */; };
+		EF902F842582398900917366 /* UploadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F562582398800917366 /* UploadFile.swift */; };
+		EF902F852582398900917366 /* BodyConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F572582398800917366 /* BodyConvertible.swift */; };
+		EF902F862582398900917366 /* ExtendedApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F582582398800917366 /* ExtendedApiRequest.swift */; };
+		EF902F872582398900917366 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F592582398800917366 /* HttpMethod.swift */; };
+		EF902F882582398900917366 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F5A2582398800917366 /* Header.swift */; };
+		EF902F892582398900917366 /* QueryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F5B2582398800917366 /* QueryField.swift */; };
+		EF902F8A2582398900917366 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F5C2582398800917366 /* ApiRequest.swift */; };
+		EF902F8B2582398900917366 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F5D2582398800917366 /* NetworkRequest.swift */; };
+		EF902F8E2582398900917366 /* ApiBaseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F602582398800917366 /* ApiBaseGateway.swift */; };
+		EF902F8F2582398900917366 /* SearchRepositoriesGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F612582398800917366 /* SearchRepositoriesGateway.swift */; };
+		EF902F902582398900917366 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F632582398900917366 /* Config.swift */; };
+		EF902F912582398900917366 /* ResponseErrorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F652582398900917366 /* ResponseErrorEntity.swift */; };
+		EF902F922582398900917366 /* PaginationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F662582398900917366 /* PaginationEntity.swift */; };
+		EF902F952582398900917366 /* MovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902F692582398900917366 /* MovieEntity.swift */; };
+		EF902FCB2582429100917366 /* TabViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF902FCA2582429100917366 /* TabViewWrapper.swift */; };
+		EF902FCE2582433700917366 /* ToDo in Resources */ = {isa = PBXBuildFile; fileRef = EF902FCD2582433700917366 /* ToDo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +58,40 @@
 		EF30339425822BDC003AFF18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF30339725822BDC003AFF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF30339925822BDC003AFF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF712DFF25836BA700E24189 /* PopularViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewModel.swift; sourceTree = "<group>"; };
+		EF712E042583749200E24189 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		EF712E1D25839D7F00E24189 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		EF8F2E852584DD8800D0A773 /* RandomAccessCollection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomAccessCollection+Extension.swift"; sourceTree = "<group>"; };
+		EF8F2E8B2584DE0900D0A773 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		EF8F2E8E2584DE2A00D0A773 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		EF902F3A2582398800917366 /* ApiEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		EF902F402582398800917366 /* Collection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		EF902F432582398800917366 /* F.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = F.swift; sourceTree = "<group>"; };
+		EF902F442582398800917366 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		EF902F4A2582398800917366 /* Interceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interceptor.swift; sourceTree = "<group>"; };
+		EF902F4C2582398800917366 /* ResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
+		EF902F4D2582398800917366 /* ErrorResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponseHandler.swift; sourceTree = "<group>"; };
+		EF902F4E2582398800917366 /* JsonResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonResponseHandler.swift; sourceTree = "<group>"; };
+		EF902F4F2582398800917366 /* ApiClientImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientImpl.swift; sourceTree = "<group>"; };
+		EF902F522582398800917366 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		EF902F532582398800917366 /* RepositoriesPagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesPagination.swift; sourceTree = "<group>"; };
+		EF902F542582398800917366 /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		EF902F562582398800917366 /* UploadFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFile.swift; sourceTree = "<group>"; };
+		EF902F572582398800917366 /* BodyConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyConvertible.swift; sourceTree = "<group>"; };
+		EF902F582582398800917366 /* ExtendedApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedApiRequest.swift; sourceTree = "<group>"; };
+		EF902F592582398800917366 /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		EF902F5A2582398800917366 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		EF902F5B2582398800917366 /* QueryField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryField.swift; sourceTree = "<group>"; };
+		EF902F5C2582398800917366 /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		EF902F5D2582398800917366 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		EF902F602582398800917366 /* ApiBaseGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiBaseGateway.swift; sourceTree = "<group>"; };
+		EF902F612582398800917366 /* SearchRepositoriesGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesGateway.swift; sourceTree = "<group>"; };
+		EF902F632582398900917366 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		EF902F652582398900917366 /* ResponseErrorEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseErrorEntity.swift; sourceTree = "<group>"; };
+		EF902F662582398900917366 /* PaginationEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationEntity.swift; sourceTree = "<group>"; };
+		EF902F692582398900917366 /* MovieEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieEntity.swift; sourceTree = "<group>"; };
+		EF902FCA2582429100917366 /* TabViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewWrapper.swift; sourceTree = "<group>"; };
+		EF902FCD2582433700917366 /* ToDo */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToDo; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +128,7 @@
 			children = (
 				EF30338B25822BDA003AFF18 /* AppDelegate.swift */,
 				EF30338D25822BDA003AFF18 /* SceneDelegate.swift */,
+				EF902FCD2582433700917366 /* ToDo */,
 			);
 			path = MovDB;
 			sourceTree = "<group>";
@@ -75,7 +144,13 @@
 		EF3033A025822F1C003AFF18 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				EF30338F25822BDA003AFF18 /* ContentView.swift */,
+				EF902F482582398800917366 /* Geteway */,
+				EF902F3F2582398800917366 /* Extensions */,
+				EF902F642582398900917366 /* Domain */,
+				EF902F622582398900917366 /* Config */,
+				EF902F652582398900917366 /* ResponseErrorEntity.swift */,
+				EF902F662582398900917366 /* PaginationEntity.swift */,
+				EF6D8F892582882D00E54817 /* UI */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -89,6 +164,105 @@
 				EF30339325822BDC003AFF18 /* Preview Content */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF6D8F892582882D00E54817 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EF902FCA2582429100917366 /* TabViewWrapper.swift */,
+				EF712DFF25836BA700E24189 /* PopularViewModel.swift */,
+				EF30338F25822BDA003AFF18 /* ContentView.swift */,
+				EF712E042583749200E24189 /* MovieCell.swift */,
+				EF8F2E892584DDF500D0A773 /* Image */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EF8F2E892584DDF500D0A773 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				EF712E1D25839D7F00E24189 /* AsyncImage.swift */,
+				EF8F2E8B2584DE0900D0A773 /* ImageLoader.swift */,
+				EF8F2E8E2584DE2A00D0A773 /* ImageCache.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		EF902F3F2582398800917366 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF902F402582398800917366 /* Collection+Extension.swift */,
+				EF902F432582398800917366 /* F.swift */,
+				EF902F442582398800917366 /* URLSessionProtocol.swift */,
+				EF8F2E852584DD8800D0A773 /* RandomAccessCollection+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF902F482582398800917366 /* Geteway */ = {
+			isa = PBXGroup;
+			children = (
+				EF902F492582398800917366 /* Interceptors */,
+				EF902F4B2582398800917366 /* ResponseHandlers */,
+				EF902F552582398800917366 /* Componens */,
+				EF902F4F2582398800917366 /* ApiClientImpl.swift */,
+				EF902F522582398800917366 /* ApiClient.swift */,
+				EF902F542582398800917366 /* Requests.swift */,
+				EF902F602582398800917366 /* ApiBaseGateway.swift */,
+				EF902F612582398800917366 /* SearchRepositoriesGateway.swift */,
+				EF902F532582398800917366 /* RepositoriesPagination.swift */,
+			);
+			path = Geteway;
+			sourceTree = "<group>";
+		};
+		EF902F492582398800917366 /* Interceptors */ = {
+			isa = PBXGroup;
+			children = (
+				EF902F4A2582398800917366 /* Interceptor.swift */,
+			);
+			path = Interceptors;
+			sourceTree = "<group>";
+		};
+		EF902F4B2582398800917366 /* ResponseHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				EF902F4C2582398800917366 /* ResponseHandler.swift */,
+				EF902F4D2582398800917366 /* ErrorResponseHandler.swift */,
+				EF902F4E2582398800917366 /* JsonResponseHandler.swift */,
+			);
+			path = ResponseHandlers;
+			sourceTree = "<group>";
+		};
+		EF902F552582398800917366 /* Componens */ = {
+			isa = PBXGroup;
+			children = (
+				EF902F562582398800917366 /* UploadFile.swift */,
+				EF902F572582398800917366 /* BodyConvertible.swift */,
+				EF902F582582398800917366 /* ExtendedApiRequest.swift */,
+				EF902F592582398800917366 /* HttpMethod.swift */,
+				EF902F5A2582398800917366 /* Header.swift */,
+				EF902F5B2582398800917366 /* QueryField.swift */,
+				EF902F5C2582398800917366 /* ApiRequest.swift */,
+				EF902F5D2582398800917366 /* NetworkRequest.swift */,
+			);
+			path = Componens;
+			sourceTree = "<group>";
+		};
+		EF902F622582398900917366 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EF902F3A2582398800917366 /* ApiEndpoint.swift */,
+				EF902F632582398900917366 /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EF902F642582398900917366 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EF902F692582398900917366 /* MovieEntity.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +324,7 @@
 			files = (
 				EF30339825822BDC003AFF18 /* LaunchScreen.storyboard in Resources */,
 				EF30339525822BDC003AFF18 /* Preview Assets.xcassets in Resources */,
+				EF902FCE2582433700917366 /* ToDo in Resources */,
 				EF30339225822BDC003AFF18 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,9 +336,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF712E0025836BA700E24189 /* PopularViewModel.swift in Sources */,
+				EF712E1E25839D7F00E24189 /* AsyncImage.swift in Sources */,
+				EF902F8F2582398900917366 /* SearchRepositoriesGateway.swift in Sources */,
+				EF902F872582398900917366 /* HttpMethod.swift in Sources */,
+				EF902F842582398900917366 /* UploadFile.swift in Sources */,
+				EF902F882582398900917366 /* Header.swift in Sources */,
+				EF902F862582398900917366 /* ExtendedApiRequest.swift in Sources */,
+				EF902F722582398900917366 /* Collection+Extension.swift in Sources */,
+				EF902F7C2582398900917366 /* ErrorResponseHandler.swift in Sources */,
+				EF8F2E8F2584DE2A00D0A773 /* ImageCache.swift in Sources */,
+				EF902F8A2582398900917366 /* ApiRequest.swift in Sources */,
+				EF902F922582398900917366 /* PaginationEntity.swift in Sources */,
+				EF902F7E2582398900917366 /* ApiClientImpl.swift in Sources */,
+				EF902F902582398900917366 /* Config.swift in Sources */,
+				EF8F2E8C2584DE0900D0A773 /* ImageLoader.swift in Sources */,
+				EF902F812582398900917366 /* ApiClient.swift in Sources */,
+				EF712E052583749200E24189 /* MovieCell.swift in Sources */,
+				EF902F832582398900917366 /* Requests.swift in Sources */,
 				EF30338C25822BDA003AFF18 /* AppDelegate.swift in Sources */,
 				EF30338E25822BDA003AFF18 /* SceneDelegate.swift in Sources */,
+				EF902F7D2582398900917366 /* JsonResponseHandler.swift in Sources */,
+				EF902F7A2582398900917366 /* Interceptor.swift in Sources */,
+				EF902F752582398900917366 /* F.swift in Sources */,
 				EF30339025822BDA003AFF18 /* ContentView.swift in Sources */,
+				EF902F912582398900917366 /* ResponseErrorEntity.swift in Sources */,
+				EF902FCB2582429100917366 /* TabViewWrapper.swift in Sources */,
+				EF902F8B2582398900917366 /* NetworkRequest.swift in Sources */,
+				EF902F852582398900917366 /* BodyConvertible.swift in Sources */,
+				EF8F2E862584DD8800D0A773 /* RandomAccessCollection+Extension.swift in Sources */,
+				EF902F952582398900917366 /* MovieEntity.swift in Sources */,
+				EF902F822582398900917366 /* RepositoriesPagination.swift in Sources */,
+				EF902F8E2582398900917366 /* ApiBaseGateway.swift in Sources */,
+				EF902F762582398900917366 /* URLSessionProtocol.swift in Sources */,
+				EF902F892582398900917366 /* QueryField.swift in Sources */,
+				EF902F6E2582398900917366 /* ApiEndpoint.swift in Sources */,
+				EF902F7B2582398900917366 /* ResponseHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
